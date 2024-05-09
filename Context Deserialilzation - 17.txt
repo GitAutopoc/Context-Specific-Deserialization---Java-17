@@ -1,0 +1,5 @@
+Problem Statement:
+Develop a JUnit test suite for a Java application that serializes and deserializes Employee objects. This suite should include the following:
+
+Test Serialization and Deserialization: Write a test to verify that an Employee object can be successfully serialized to a file and then deserialized from that file. The test should ensure that the deserialized object is not null and exactly matches the serialized Employee object in terms of its properties (name and age).
+Test Deserialization Filter: Implement a test to verify that the deserialization filter correctly allows only Employee objects to be deserialized. This test should attempt to serialize and then deserialize an object of a different class (e.g., a String or any other non-Employee object). The test should expect the deserialization process to fail, catching an InvalidClassException or similar to confirm that the filter is working as intended.
